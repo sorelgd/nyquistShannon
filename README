@@ -1,0 +1,37 @@
+#API Documentation 
+
+server_IP/api?ui=re_doc#operation/postUserCollection
+
+#API acces
+http://192.168.32.144:8000/api
+
+# utiliser POSTMan pour les tests
+
+POST
+/api/users
+{
+  "firstname": "string",
+  "lastname": "string",
+  "creationdate": "2019-12-23T15:45:38Z",
+  "updatedate": "2019-12-23T15:45:38Z"
+}
+
+
+GET (id)
+/api/users/{id}
+
+GET (all)
+/api/users/
+
+DELETE
+/api/users/{id}
+
+
+PUT
+/api/users/{id}
+
+{
+  "firstname": "string",
+  "lastname": "string",
+  "updatedate": "2019-12-23T15:45:38Z"
+}
