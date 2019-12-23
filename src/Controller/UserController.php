@@ -70,7 +70,7 @@ class UserController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $logger->info('I just got the logger modification');
+            $logger->info('votre utilisateur a été modifié');
             $user->setUpdatedate(new \DateTime("now"));
             $this->getDoctrine()->getManager()->flush();
 

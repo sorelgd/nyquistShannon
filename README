@@ -1,37 +1,41 @@
+------------------------------------------------------------------------------------------
+Documentation de l'API
+------------------------------------------------------------------------------------------
 #API Documentation 
-
 server_IP/api?ui=re_doc#operation/postUserCollection
 
 #API acces
-http://192.168.32.144:8000/api
+server_IP/api
 
-# utiliser POSTMan pour les tests
-
+# utiliser POSTMAN pour les tests
+#Creation d'un nouvel utilisateur
 POST
-/api/users
+server_IP/api/users
 {
-  "firstname": "string",
-  "lastname": "string",
-  "creationdate": "2019-12-23T15:45:38Z",
-  "updatedate": "2019-12-23T15:45:38Z"
+  "firstname": "string",
+  "lastname": "string",
+  "creationdate": "2019-12-23T15:45:38Z",
+  "updatedate": "2019-12-23T15:45:38Z"
 }
 
-
+#Liste des donnée d'un utilisateur
 GET (id)
-/api/users/{id}
+server_IP/api/users/{id}
 
+#Liste des differents utilisateurs
 GET (all)
 /api/users/
 
+#Suppression d'un utilisateur
 DELETE
-/api/users/{id}
+server_IP/api/users/{id}
 
-
+#Modification des donnée d'un utilisateur
 PUT
-/api/users/{id}
+server_IP/api/users/{id}
 
 {
-  "firstname": "string",
-  "lastname": "string",
-  "updatedate": "2019-12-23T15:45:38Z"
+  "firstname": "string",
+  "lastname": "string",
+  "updatedate": "2019-12-23T15:45:38Z"
 }
